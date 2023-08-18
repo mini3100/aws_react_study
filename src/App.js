@@ -1,15 +1,18 @@
-import CustomerInputTest from "./pages/CustomerInputTest/CustomerInputTest";
-import InputTest from "./pages/InputTest/InputTest";
-import Main from "./pages/Main/Main";
+import { Route, Routes } from "react-router-dom";
+import Main from "./pages/Main/Main"
+import CustomerInputTest from "./pages/CustomerInputTest/CustomerInputTest"
+import InputTest from "./pages/InputTest/InputTest"
 import Mypage from "./pages/Mypage/Mypage";
 
 function App() {
   return (
     <>
-      {/* <Main></Main> */}
-      {/* <InputTest /> */}
-      {/* <CustomerInputTest /> */}
-      <Mypage />
+      <Routes>
+        <Route path="/" element={ <Main /> }/>
+        <Route path="/customerinputtest" element={ <CustomerInputTest/> }/>
+        <Route path="/inputtest" element={ <InputTest /> }/>
+        <Route path="/mypage" element={ <Mypage/> }/>
+      </Routes>
     </>
   );
 }

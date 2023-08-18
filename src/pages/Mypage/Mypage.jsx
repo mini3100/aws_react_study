@@ -40,7 +40,7 @@ function Mypage(props) {
     }
 
     const handleSaveBtnClick = () => {
-        localStorage.setItem("profileImg", JSON.stringify(profileImg));
+        localStorage.setItem("profileImg", profileImg);
         localStorage.setItem("userList", JSON.stringify(user));
     }
 
